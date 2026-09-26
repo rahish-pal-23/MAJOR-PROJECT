@@ -127,3 +127,15 @@ body {
   height: 400px;
   width: 100vh;
 }
+
+@media (max-width: 768px) {
+  .listing-card {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .card {
+    width: 100% !important;
+  }
+}
