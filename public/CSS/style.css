@@ -128,14 +128,25 @@ body {
   width: 100vh;
 }
 
-@media (max-width: 768px) {
-  .listing-card {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: white !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
   }
+}
 
-  .card {
+@media (max-width: 768px) {
+  /* Search form ko mobile par vertical stack karne ke liye */
+  .navbar .d-flex[role="search"] {
     width: 100% !important;
+    flex-direction: column !important;
+    gap: 10px;
   }
 }
